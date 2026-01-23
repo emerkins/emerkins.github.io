@@ -28,7 +28,7 @@ h2 {
 	background-color: rgb(153, 153, 166);
 	color: #f5f4f0;
 	font-size: 30px;
-	padding: 0.5em;
+	padding: 1em;
 	font-family: serif;
 	font-weight: bold;
 }
@@ -57,7 +57,7 @@ p.price {
 }
 
 ul {
-	margin: 15px 10px 10px;
+	margin: 25px 10px 10px;
 }
 
 li { 
