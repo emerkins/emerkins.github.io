@@ -11,37 +11,37 @@ body {
 	background-color: #f5f4f0; /* Not totally white. */
 	color: #343434;  /* Not totally black. */
 	line-height: 140%; 	/* A little extra leading. */
-	font-family: serif;
+	font-family: sans-serif;
 }
 
 h1 {
 	background-color: rgb(153, 153, 166);
 	color: #f5f4f0; /* Same as body background. */
-	font-size: 40px;
-	padding: 2em 2em 2em; /* You want three values. */
+	font-size: 35px;
+	padding: 10px 40px 20px; /* You want three values. */
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 
 h2 {
 	background-color: rgb(153, 153, 166);
 	color: #f5f4f0;
-	font-size: 35;
-	padding: 2em;
-	font-family: sans-serif;
+	font-size: 25px;
+	padding: 1em;
+	font-family: serif;
 	font-weight: bold;
 }
 
 h3 {
-	margin: 2em 2em 2em; /*Three values again. You got the idea.*/
-	padding-top: 2em;
-	font-size: 20;
+	margin: 10px 40px 20px; /*Three values again. You got the idea.*/
+	padding-top: 1em;
+	font-size: 20px;
 	color: rgb(159, 59, 49);
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-	border-top: 2pc flat rgb(159, 59, 49);
+	border-top: 2pc solid rgb(159, 59, 49);
 }
 
 h4 {
@@ -57,10 +57,10 @@ p.price {
 }
 
 ul {
-	margin: 2em 2em 2em;
+	margin: 10px 40px 20px;
 }
 
 li { 
-	margin: 4em 4em;
+	margin: 10px 40px;
 	list-style-type: none;
 }
