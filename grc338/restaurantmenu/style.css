@@ -18,7 +18,7 @@ h1 {
 	background-color: rgb(153, 153, 166);
 	color: #f5f4f0; /* Same as body background. */
 	font-size: 35px;
-	padding: 30px 25px 10px; /* You want three values. */
+	padding: 35px 25px 10px; /* You want three values. */
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -28,13 +28,13 @@ h2 {
 	background-color: rgb(153, 153, 166);
 	color: #f5f4f0;
 	font-size: 30px;
-	padding: 1em;
+	padding: 0.5em;
 	font-family: serif;
 	font-weight: bold;
 }
 
 h3 {
-	margin: 20px 20px 20px; /*Three values again. You got the idea.*/
+	margin: 40px 20px 20px; /*Three values again. You got the idea.*/
 	padding-top: 0.5em;
 	font-size: 20px;
 	color: rgb(159, 59, 49);
@@ -57,10 +57,10 @@ p.price {
 }
 
 ul {
-	margin: 15px 15px 10px;
+	margin: 15px 10px 10px;
 }
 
 li { 
-	margin: 15px 15px;
+	margin: 15px 10px;
 	list-style-type: none;
 }
