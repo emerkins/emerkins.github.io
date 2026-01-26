@@ -7,6 +7,60 @@ img {
      display: block;
 }
 
+header {
+    background-color: rgb( 239, 142, 52 );
+}
+
+h1 {
+    font-family: Sutro, serif;  
+    font-weight: 700;  
+    font-style: normal;
+    color: white;
+}
+
+h2 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    color: rgb( 249, 222, 190 );
+}
+
+figcaption {
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+    color: rgb( 34, 34, 34 );
+}
+
+h3 {
+    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+    color: rgb( 239, 142, 52 );
+    text-transform: uppercase;
+}
+
+li {
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    color: rgb( 34, 34, 34 );
+}
+
+p {
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+    color: rgb( 238, 235, 231 );
+}
+
+footer {
+     background-color: rgb( 239, 142, 52 );
+}
+
+
+
+
 
 
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
