@@ -42,7 +42,7 @@ figcaption {
 h3 {
     font-family: Sutro, serif;  
     font-weight: 300;  
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-style: normal;
     color: rgb( 239, 142, 52 );
     text-transform: uppercase;
@@ -59,7 +59,7 @@ li {
 
 ul {
     list-style-type: disc;
-    padding-bottom: 1.15rem;
+    padding-bottom: 1rem;
 }
 
 ol {
