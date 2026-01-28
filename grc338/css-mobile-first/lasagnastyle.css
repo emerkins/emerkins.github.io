@@ -59,11 +59,12 @@ li {
 
 ul {
     list-style-type: disc;
-    margin: 0rem 0.75rem;
+    margin: 0rem 1.25rem;
 }
 
 ol {
     list-style-type: decimal;
+    margin: 0rem 1.25rem;
 }
 
 p {
