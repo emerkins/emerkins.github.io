@@ -13,10 +13,10 @@ header {
 
 h1 {
     font-family: Sutro, serif;  
-    font-weight: 1200rem;  
+    font-weight: 1200em;  
     font-style: normal;
     color: white;
-    margin: ( 30rem, 15rem, 30rem );
+    margin: ( 300rem, 15rem, 30rem );
 }
 
 h2 {
