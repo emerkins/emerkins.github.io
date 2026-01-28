@@ -17,7 +17,7 @@ h1 {
     font-size: 2rem;
     font-style: normal;
     color: white;
-    margin: 100rem, 50rem, 30rem ;
+    margin: 1rem 2rem 3rem;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
     font-size: 1.5rem;
     font-style: normal;
     color: rgb( 249, 222, 190 );
-    margin: 30rem, 50rem, 50rem;
+    margin: 3rem 2rem 5rem;
 }
 
 figcaption {
@@ -35,7 +35,7 @@ figcaption {
     font-size: 0.95rem;
     font-style: italic;
     color: rgb( 34, 34, 34 );
-    margin: 30rem, 50rem, 50rem;
+    margin: 3rem 2rem 5rem;
 }
 
 h3 {
@@ -45,7 +45,7 @@ h3 {
     font-style: normal;
     color: rgb( 239, 142, 52 );
     text-transform: uppercase;
-    margin: 30rem, 50rem, 50rem;
+    margin: 3rem 2rem 5rem;
 }
 
 li {
@@ -54,7 +54,8 @@ li {
     font-style: normal;
     color: rgb( 34, 34, 34 );
     list-style-type: circle;
-    margin: 30rem, 50rem, 40rem;
+    list-style-position: inside;
+    margin: 3rem 2rem 4rem;
 }
 
 ol {
@@ -66,7 +67,7 @@ p {
     font-weight: 400;  
     font-style: normal;
     color: rgb( 238, 235, 231 );
-    margin: 30rem, 50rem, 40rem;
+    margin: 3rem 2rem 4rem;
 }
 
 footer {
