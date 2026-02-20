@@ -31,3 +31,45 @@
       </footer>
    </body>
 </html>
+
+def remove_front(self) -> None:
+    self.num_spaces_used -= 1
+    self.first_idx = (self.first_idx + 1) % len(self.buffer)  # wrap
+
+def append(self, value : Any) -> None:
+    if len(self.buffer) == self.num_spaces_used:
+        self.expand_buffer()  # O(N) but rare → amortized O(1)
+    self.buffer[(self.first_idx + self.num_spaces_used) % len(self.buffer)] = value
+    self.num_spaces_used += 1
+
+# Dequeue - bubble down
+def dequeue(self) -> None:
+    self.heap[0] = self.heap[-1]
+    self.heap.pop()
+    idx = 0
+   
+    while True:
+        children = []  # get child indices
+        left = 2*idx + 1
+        right = 2*idx + 2
+        if left < len(self.heap): children.append(left)
+        if right < len(self.heap): children.append(right)
+        
+        if len(children) == 0:
+            return
+        
+        # Pick best child
+        if len(children) == 1:
+            child = children[0]
+        else:  # 2 children
+            if self.heap_property(self.heap[children[0]].priority, self.heap[children[1]].priority):
+                child = children[0]
+            else:
+                child = children[1]
+        
+        if self.heap_property(self.heap[idx].priority, self.heap[child].priority):
+            return
+        
+        # Swap
+        self.heap[idx], self.heap[child] = self.heap[child], self.heap[idx]
+        idx = child
