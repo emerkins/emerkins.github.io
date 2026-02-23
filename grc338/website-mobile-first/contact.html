@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="style.css"/>
+      <title></title>
+   </head>
+   <body>
+      <header>
+         <h1> <a href="index.html"><img src="logo.svg" alt="Brand Name."></a> </h1>
+         <nav>
+            <ul>
+               <li> <a href="about.html">About</a> </li>
+               <li> <a href="menu.html">Menu</a> </li>
+               <li> <a href="contact.html">Contact</a> </li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <h2> <img src="placeholder.jpg" alt=""> </h2>
+         <address>123 Happy Ave, San Luis Obispo, California</address>
+         <address>805-756-1108</address>
+         <h3>Hours</h3>
+         <ul>
+            <li>Tuesday–Friday: 0:00–0:00</li>
+            <li>Saturday–Sunday: 0:00–0:00</li>
+            <li>Closed on Mondays</li>
+         </ul>
+      </main>
+      <footer>
+         <p>© All rights reserved. The Restaurant, 2025.</p>
+      </footer>
+   </body>
+</html>
+
+def remove_front(self) -> None:
+    self.num_spaces_used -= 1
+    self.first_idx = (self.first_idx + 1) % len(self.buffer)  # wrap
+
+def append(self, value : Any) -> None:
+    if len(self.buffer) == self.num_spaces_used:
+        self.expand_buffer()  # O(N) but rare → amortized O(1)
+    self.buffer[(self.first_idx + self.num_spaces_used) % len(self.buffer)] = value
+    self.num_spaces_used += 1
+
+# Dequeue - bubble down
+def dequeue(self) -> None:
+    self.heap[0] = self.heap[-1]
+    self.heap.pop()
+    idx = 0
+   
+    while True:
+        children = []  # get child indices
+        left = 2*idx + 1
+        right = 2*idx + 2
+        if left < len(self.heap): children.append(left)
+        if right < len(self.heap): children.append(right)
+        
+        if len(children) == 0:
+            return
+        
+        # Pick best child
+        if len(children) == 1:
+            child = children[0]
+        else:  # 2 children
+            if self.heap_property(self.heap[children[0]].priority, self.heap[children[1]].priority):
+                child = children[0]
+            else:
+                child = children[1]
+        
+        if self.heap_property(self.heap[idx].priority, self.heap[child].priority):
+            return
+        
+        # Swap
+        self.heap[idx], self.heap[child] = self.heap[child], self.heap[idx]
+        idx = child
