@@ -2,6 +2,10 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
 
+body {  
+    font-family: sans-serif;  
+	line-height: 1.35rem;
+} 
 
 div.home-container { 
 	background: url(images/home-background.jpg) center center fixed;
@@ -19,7 +23,7 @@ div.container {
 
 
 main { 
-	padding: ____ ____ ____;
+	padding: 1rem 1.5rem 4rem;
 	}
 
 img {
@@ -28,94 +32,97 @@ img {
 }
 
 header {
-	display: ____;
-	grid-template-columns: ____ ____;
-	background: ____;
-	padding: ____ ____;
+	display: grid;
+	grid-template-columns: repeat( 2, 1fr );
+	background: rgb( 204, 204, 204 );
+	padding: 1rem 0.75rem;
 	}
 
 h1 {
-	width: ____;
+	width: 13em;
 	}
 
 h2, h3, h4 {
-		font-weight: ____;
+		font-weight: 700;
 	}
 
 h2 {
-	font-size: ____;
-	margin: ____ ____ ____;
+	font-size: 2rem;
+	margin: 2.5rem 0.75rem 0.75rem;
 	}
 	
 h3 {
-	font-size: ____;
-	margin: ____ ____ ____;
+	font-size: 1.5rem;
+	margin: 2rem 0.75rem 1rem;
 }
 
 
 a {
-	text-decoration: ____;
+	text-decoration: none;
 	}
 
 nav ul  {
-	text-align: ____;
+	text-align: end;
 	}
 	
 ul li 	{
-	list-style-type: ____;
+	list-style-type: none;
+	margin: 0.75rem 0.75rem;
 }
 
 figure {
-	margin-bottom: ____;
+	margin: 0.5rem 0.75rem 1.5rem;
 }
 
 main.menu ul {
-		margin: ____ ____;
+		margin: 2.5rem 0.75rem;
 }	
 
 main.menu ul li {
-		margin: ____ ____ ____;
-		display: ____;
+		margin: 1.5rem 0rem 2rem;
+		display: grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 }	
 
 p {
-	margin: ____ ____ ____;
+	margin: 1rem 0.75rem 1rem;
 	}
 	
 p.description {
-	grid-column: ____;
-	margin: ____;
+	grid-column: 1/6;
+	margin: 0.2rem 0rem;
 	}
 	
 p.price {
-	grid-row: ____;
-	grid-column: ____;
-	color: ____;
-	text-align: ____;
-	margin: ____;
+	grid-row: 1/2;
+	grid-column: 5/5;
+	color: rgb( 224, 45, 45 );
+	text-align: right;
+	margin: 0rem;
 	}
 	
 nav ul li {
-	text-transform: ____;
-	font-weight: ____;
-	margin-bottom: ____;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1.25rem;
 	}
 	
 nav ul li a {
-	color: ____;
-	background-color: ____;
-	padding: ____ ____ ____;
+	color: rgb( 255, 255, 56 );
+	background-color: rgb( 0, 5, 251 );
+	padding: 0.4rem;
 	}
 	
 
 p.slogan {
-	font-size: ____;
-	font-family: ____;
-	font-style: ____;
-	margin: ____ ____ ____;
-	color: ____;	
+	font-family: serif;  
+    font-style: italic; 
+	font-size: 4rem;
+	margin: 3.5rem 1rem 7rem;
+	color: rgb( 255, 255, 255 );	
+	line-height: 4rem;
+
 	}
 	
 footer {
@@ -124,12 +131,13 @@ footer {
   width: 100%;
   height: 3rem; 
   box-sizing: border-box;
-  padding: ____ ____;
-  background: ____;
+  padding: 1rem 0.75rem 0.75rem;
+  background: rgb( 255, 255, 56 );
 }
 
 address {
-	color: ____;
+	color: rgb( 229, 136, 24 );
+	margin-left: 0.75rem;
 	}
 
 footer p {
