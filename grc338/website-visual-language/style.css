@@ -46,7 +46,7 @@ header {
 	}
 
 h1 {
-	width: 13em;
+	width: 11em;
 	}
 
 h2, h3, h4 {
@@ -57,12 +57,12 @@ h2, h3, h4 {
 
 h2 {
 	font-size: 3rem;
-	margin: 2.5rem 0rem 0.75rem;
+	margin: 2.5rem 0.75rem 0.75rem;
 	}
 	
 h3 {
 	font-size: 2rem;
-	margin: 2rem 0rem 1rem;
+	margin: 2rem 0.75rem 1rem;
 }
 
 h4 {
